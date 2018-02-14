@@ -46,13 +46,16 @@ class UlpanApp extends Component {
         en: 'woOOot',
         confidence: 0.5,
       },
-    ]
+    ],
+
+    activeWord: '',
   }
 
+  setActive = ( activeWord )=> this.setState({ activeWord })
   
   render() {
-    const { words } = this.state;
-    
+    const { words, activeWord } = this.state;
+
     return (
       <div className='App'>
         <header className='App-header'>
@@ -60,15 +63,16 @@ class UlpanApp extends Component {
           <h1 className='App-title'>Welcome to React</h1>
         </header>
         
-        <div className='list-of-words'>
+        <ul className='list-of-words'>
           {
             words.map( ({ he, en }) => (
-              <p key={he}>
-                <span>{he}</span> - <span>{en}</span>
-              </p>
+              <li key={he} name={he} onClick={()=> this.setActive(he)}>
+                <div>{he}</div>
+                <div className={(he === activeWord) ? 'active':''}>{en}</div>
+              </li>
             ) )
           }
-        </div>
+        </ul>
       </div>
     );
   }

@@ -29,5 +29,32 @@
 
 
 .App .list-of-words {
-  text-decoration: underline;
+  list-style: none;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.App .list-of-words li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  border: 3px inset gray;
+}
+
+.App .list-of-words li div {
+  width: 50%;
+}
+
+.App .list-of-words li div:first-child {
+  border-right: 1px dashed black;
+}
+
+.App .list-of-words li div:nth-child(2) {
+  background-color: black;
+}
+
+.App .list-of-words li div:nth-child(2):hover,
+.App .list-of-words li div.active {
+  background-color: inherit;
 }
