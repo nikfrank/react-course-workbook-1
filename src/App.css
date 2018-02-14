@@ -29,5 +29,24 @@
 
 
 .App .list-of-words {
-  text-decoration: underline;
+  max-width: 350px;
+  margin: 5px auto 0;
+}
+
+.App .list-of-words p {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.App .list-of-words p span {
+  padding: 10px;
+}
+
+.App .list-of-words p span:nth-child(2) {
+  background-color: black;
+}
+
+.App .list-of-words p span:nth-child(2):hover {
+  background-color: inherit;
 }
