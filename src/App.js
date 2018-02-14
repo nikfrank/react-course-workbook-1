@@ -64,7 +64,8 @@ class UlpanApp extends Component {
           {
             words.map( ({ he, en }) => (
               <p key={he}>
-                <span>{he}</span> - <span>{en}</span>
+                <span>{he}</span>
+                <span>{en}</span>
               </p>
             ) )
           }
