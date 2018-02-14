@@ -29,5 +29,31 @@
 
 
 .App .list-of-words {
-  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 350px;
+  margin: 10px auto 0;
+}
+
+.App .list-of-words div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.App .list-of-words div span {
+  width: 10vw;
+}
+
+.App .list-of-words div span:nth-child(2) {
+  background-color: black;
+}
+
+.App .list-of-words div span:nth-child(2):hover {
+  background-color: inherit;
 }
