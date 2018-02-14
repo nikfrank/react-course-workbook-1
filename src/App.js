@@ -5,13 +5,47 @@ import './App.css';
 class UlpanApp extends Component {
   state = {
     words: [
-      'mastomeret',
-      'kuh eeloo',
-      'combina',
-      'achla',
-      'lo nora',
-      'lo meshaneh',
-      'oosh',
+      {
+        he: 'mastomeret',
+        en: 'I\'m stalling for time in a sentence',
+        confidence: 0.6,
+      },
+      
+      {
+        he: 'kuh eeloo',
+        en: 'liiiiiek',
+        confidence: 0.9,
+      },
+
+      {
+        he: 'combina',
+        en: 'nepotistic in',
+        confidence: 0.5,
+      },
+
+      {
+        he: 'achla',
+        en: 'yahoo',
+        confidence: 0.1,
+      },
+
+      {
+        he: 'lo nora',
+        en: 'you are less important than me',
+        confidence: 0.75,
+      },
+
+      {
+        he: 'lo meshaneh',
+        en: 'I have no idea what I\'m talking about',
+        confidence: 0.3,
+      },
+
+      {
+        he: 'oosh',
+        en: 'woOOot',
+        confidence: 0.5,
+      },
     ]
   }
 
@@ -28,9 +62,9 @@ class UlpanApp extends Component {
         
         <div className='list-of-words'>
           {
-            words.map( word => (
-              <p key={word}>
-                {word}
+            words.map( ({ he, en }) => (
+              <p key={he}>
+                <span>{he}</span> - <span>{en}</span>
               </p>
             ) )
           }
