@@ -1,3 +1,5 @@
+# react course workbook 1
+
 This is the first example where we'll write some JSX in the react course
 
 Our goal is to cover JSX basics (using HTML + CSS ish, breakouts) and some routine CSS for lists.
