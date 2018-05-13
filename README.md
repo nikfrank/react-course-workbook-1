@@ -6,7 +6,8 @@ Our goal is to cover JSX basics (using HTML + CSS ish, breakouts) and some routi
 
 Also we'll see the usual pattern for rendering data out of the state
 
-see [course page](https://github.com/nikfrank/react-course) for full details
+see [lesson page](https://github.com/nikfrank/react-course/blob/master/lessons/1.md)
+and [course page](https://github.com/nikfrank/react-course) for full details
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
